@@ -66,7 +66,7 @@ public class linkController {
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			System.out.println("-------"+e.getMessage());
-			message=MessageUtil.error(500, e.getMessage());
+			message=MessageUtil.error(500, "该id在数据库中不存在");
 		}
 		return message;
 	}
